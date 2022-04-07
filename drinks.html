@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The ShopMall</title>
+
+		<meta name="description" content="This is an online Grocery Store website.">
+		<meta name="keywords" content="Grocery, retail, shop, purchase">
+		<meta http-equiv="content-language" content="en-us">
+		<meta http-equiv="author" content="Keshav Kabra">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel='stylesheet'href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='			sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- start-smooth-scrolling -->
+		<!-- To-Top icon and functionality -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
+	</head>
+<!-- ---------------------------------------- //HEAD -------------------------------------------- -->
+
+<!-- ----------------------------------------- BODY ---------------------------------------------- -->
+	<body>
+
+		<!-- ----------------- NAV-BAR -------------------- -->
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="	#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <div class="header-left">
+				      <h3><a href="index.html" style="color:#fff;}">The ShopMall</a></h3>
+				      </div>
+			    </div>
+			    
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<div class="product_list_header">  
+							<form action="#" method="post" class="last">
+				                <fieldset>
+				                    <input type="hidden" name="cmd" value="_cart" />
+				                    <input type="hidden" name="display" value="1" />
+				                    <input type="submit" name="submit" value="View your cart" class="button" />
+				                </fieldset>
+				            </form>
+						</div>
+						<!-- USER LOGIN -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><h4><i class="fa fa-user" aria-hidden="true"></i></h4><span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="login.html">Login</a></li> 
+								<li role="separator" class="divider"></li>
+								<li><a href="login.html">Sign Up</a></li>
+							</ul>
+						</li>
+						<!-- Dropdown Menu -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>Catagories</h4><span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="fruits.html">Vegetables & Fruits</a></li>
+								<li><a href="edibles.html">Spices & Edibles</a></li>
+								<li><a href="instant.html">Instant</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="drinks.html">Juices & Soft-Drinks</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="bakery.html">Bread & Bakery</a></li>
+								<li><a href="dairy.html">Dairy</a></li>
+								<li><a href="dry-fruits.html">Dry Fruits</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="petFoods.html">Pet Foods</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="cosmetics.html">Cosmetics</a></li>
+								<li><a href="household.html">Cleaning</a></li>
+							</ul>
+						</li>
+						<div class="header-right">
+							<h3><a href="contact us/formFinal.html">Contact Us</a></h3>
+						</div>
+					</ul>
+			    </div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+
+<!-- -------------------------------- TOP BRANDS --------------------------------- -->
+		<div class="top-brands">
+			<div class="container">
+				<h3 style="margin-top: 110px;">Drinks</h3>
+				<div class="agile_top_brands_grids">
+					<div class="sub-head">
+						<h6><b>Soft-Drinks</b></h6>
+					</div>
+					<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+												
+												<h4>$10.00 <span>$12.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Pepsi" />
+														<input type="hidden" name="amount" value="10.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/66.jpg" alt=" " /><br><br><br>
+										<b><p>Pepsi (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+			<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+											
+												<h4>$5.00 <span>$8.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Coca-cola" />
+														<input type="hidden" name="amount" value="5.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/67.jpg" alt=" " /><br><br><br>
+										<b><p>Coca-cola (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+			<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+												<h4>$6.00 <span>$8.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Thumbs-up" />
+														<input type="hidden" name="amount" value="6.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/68.jpg" alt=" " /><br><br><br>
+										<b><p>Thumbs-up (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+				<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+											
+											
+												<h4>$4.00 <span>$5.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="7-up" />
+														<input type="hidden" name="amount" value="4.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/69.jpg" alt=" " /><br><br><br>
+										<b><p>7-up (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+			<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+											
+											
+												<h4>$3.00 <span>$4.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="sprite bottle" />
+														<input type="hidden" name="amount" value="3.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/16.png" alt=" " /><br><br><br>
+										<b><p>Sprite Bottle (2 ltr)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+			<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+										
+												<h4>$7.00 <span>$9.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Fanta" />
+														<input type="hidden" name="amount" value="7.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/70.jpg" alt=" " /><br><br><br>
+										<b><p>Fanta (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+				<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+											
+											
+											
+												<h4>$7.00 <span>$9.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Mirinda" />
+														<input type="hidden" name="amount" value="7.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/71.jpg" alt=" " /><br><br><br>
+										<b><p>Mirinda (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+			<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+										
+											
+												<h4>$7.00 <span>$9.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="mountain-dew" />
+														<input type="hidden" name="amount" value="7.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/72.jpg" alt=" " /><br><br><br>
+										<b><p>Mountain-Dew (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+		</div>
+<div class="clearfix"> </div>
+
+				<!-- --------------------------------- Fruit Juices ------------------------------------- -->
+				<div class="agile_top_brands_grids">
+					<div class="sub-head">
+						<h6><b>Juices</b></h6>
+					</div>
+					<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+										
+											
+												<h4>$10.00 <span>$12.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Frooti" />
+														<input type="hidden" name="amount" value="10.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/73.jpg" alt=" " /><br><br><br>
+										<b><p>Frooti (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+				<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+												<h4>$5.00 <span>$8.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Slice" />
+														<input type="hidden" name="amount" value="5.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/74.jpg" alt=" " /><br><br><br>
+										<b><p>Slice (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+			<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+										
+												<h4>$6.00 <span>$8.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Maaza" />
+														<input type="hidden" name="amount" value="6.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/75.jpg" alt=" " /><br><br><br>
+										<b><p>Maaza (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+		<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+												<h4>$4.00 <span>$5.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Tropicana-orange" />
+														<input type="hidden" name="amount" value="4.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/76.jpg" alt=" " /><br><br><br>
+										<b><p>Tropicana-Orange (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+		<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+												<h4>$3.00 <span>$4.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Glucon-D" />
+														<input type="hidden" name="amount" value="7.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/77.jpg" alt=" " /><br><br><br>
+										<b><p>Glucon-D (2 ltr)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+				<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+												<h4>$7.00 <span>$9.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Real" />
+														<input type="hidden" name="amount" value="7.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/78.jpg" alt=" " /><br><br><br>
+										<b><p>Real (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+			<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+												<h4>$7.00 <span>$9.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Rooh-afza" />
+														<input type="hidden" name="amount" value="7.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/79.jpg" alt=" " /><br><br><br>
+										<b><p>Rooh-fAza (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+		<div class="col-md-3 top_brand_left">
+				<figure>
+					<div class="snipcart-item block" >
+						<div class="inside">
+							<div class="page">	
+								<div class="price">
+									<b><h4>Price</h4></b><br><br>
+									
+												<h4>$7.00 <span>$9.00</span></h4>
+											<div class="snipcart-details top_brand_home_details">
+												<form action="#" method="post">
+													<fieldset>
+														<input type="hidden" name="cmd" value="_cart" />
+														<input type="hidden" name="add" value="1" />
+														<input type="hidden" name="business" value=" " />
+														<input type="hidden" name="item_name" value="Guruji sharbaat" />
+														<input type="hidden" name="amount" value="7.00" />
+														<input type="hidden" name="discount_amount" value="1.00" />
+														<input type="hidden" name="currency_code" value="USD" />
+														<input type="hidden" name="return" value=" " />
+														<input type="hidden" name="cancel_return" value=" " />
+														<input type="submit" name="submit" value="Add to cart" class="button" />
+													</fieldset>
+												</form>
+											</div>
+								</div>
+							</div>
+							<div class="cover">
+								<figure class="front">
+									<div class="card-header bg-white text-center text-dark" style="align-items: center;">
+										<img src="img/80.jpg" alt=" " /><br><br><br>
+										<b><p>Guruji Sharbaat (1 btl)</p></b>
+									</div>
+								</figure>
+								<figure class="back" style="background-color: #fff;"></figure>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+		</div>
+			
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+	<!-- ----------------------------- FOOTER ---------------------------- -->
+	<div class="footer">
+		<div class="agile_footer_grids">
+			<div class="footer_grid_bottom">
+				<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connect With Us</h4>
+				<ul class="agileits_social_icons">
+					<li><a href="#" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="quora"><i class="fab fa-quora" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+		<div class="footer_copy">
+			<p>&copy; 2021<a href="#">The ShopMall</a>. All rights reserved | Design with &hearts; by <a href="#">Suresh Jiloya</a></p>
+		</div>
+	</div>
+
+
+		<!-- -------------------------------- BOOTSTRAP CORE JAVASCRIPT ------------------------------------ -->
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".dropdown").hover(            
+					function() {
+						$('.dropdown-menu', this).stop( true, true ).slideDown("medium");
+						$(this).toggleClass('open');        
+					},
+					function() {
+						$('.dropdown-menu', this).stop( true, true ).slideUp("medium");
+						$(this).toggleClass('open');       
+					}
+				);
+			});
+		</script>
+
+		<!-- scrolling icon -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+
+		<!-- Add-to-Cart Option Functionality -->
+		<script src="js/minicart.js"></script>
+		<script>
+			paypal.minicart.render();
+
+			paypal.minicart.cart.on('checkout', function (evt) {
+				var items = this.items(),
+				len = items.length,
+				total = 0,
+				xx = '',
+				i;
+
+				for (i = 0; i < len; i++) {
+					t = items[i].get('quantity'); //number of items
+					amt = t*items[i].get('amount') - t; //final price -- reduce discount
+					xx += items[i].get('item_name')+' '+ t +' '+ amt +'\n';
+				}
+				alert(xx);
+
+				// Count the number of each item in the cart
+				for (i = 0; i < len; i++) {
+					total += items[i].get('quantity');
+				}
+			});
+		</script>
+
+	</body>
+</html>

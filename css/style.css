@@ -1,0 +1,754 @@
+/* *********************************************** INDEX HTML ******************************************** */
+body{
+	background: #f4f4f4;
+}
+#all_products{
+    padding-top: 50px; 
+}
+.toggle{
+            position: absolute;
+            top: 15px;
+            left: 45px;
+            height: 45px;
+            width: 45px;
+            text-align: center;
+            background:#1b1b1b;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: left 0.5s ease;
+        }
+        .toggle span{
+            color: #fff;
+            font-size: 28px;
+            line-height: 45px;
+        }
+        .toggle.click{
+            left: 260px;
+        }
+        .toggle.click span:before{
+            content: '\f00d';
+        }
+        .sidebar{
+            position: fixed;
+            color: #ddd;
+            top: 0px;
+            width: 250px;
+            height: 100%;
+            left: -250px;
+            background:#000;
+            z-index: 1;
+        }
+        .sidebar ul img{
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 50%;
+        }
+        .sidebar ul h3{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .sidebar ul li{
+            left: 0;
+            list-style: none;
+            font-size: 20px;
+            margin: 20px 15px;
+            border-bottom: 2px solid #ddd;
+        }
+        .sidebar ul li:hover{
+            color: cyan;
+            padding-left: 5px;
+            border-left: 2px solid cyan;
+        }
+        .sidebar.show{
+            left:0px;
+            transition: left 0.5s ease;
+        }
+.container{
+	margin-left: 10px;
+	padding-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+.container .row{
+	margin-left: -20px;
+}
+
+.dropdown > ul > li > a:hover, .dropdown > ul > li > a:focus {
+    background-color: rgb(240, 244, 53);
+    color: rgb(187, 0, 4);
+}
+
+.navbar{
+	border-radius: 0px;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	margin: 0 auto;
+	left:0;
+	z-index:9999;
+}
+
+.navbar-brand{
+	padding-left: 40px;
+}
+
+#logo{
+	width: 100%;
+	height: 540px;
+	margin-bottom: 10px;
+}
+
+.header-left{
+	float: left;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.header-right{
+	float: right;
+	margin-top: 0px;
+	padding-left: 20px;
+	padding-top: 0px;
+}
+.header-right h3 a, .header-left h3 a{
+	font-size: 0.74em;
+    color: #fff;
+    padding: .5em 1.5em;
+    background: #FA1818;
+    display: block;
+	text-decoration:none;
+}
+
+/* ************************ View your Cart TOP ********************************* */
+.product_list_header {
+	margin-top: 14px;
+	margin-right: 390px;
+}
+.product_list_header span {
+    font-size: 1em;
+    color: #fff;
+	top: 1em;
+}
+.product_list_header input.button {
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    text-transform: capitalize;
+    text-align: center;
+    padding: .5em 2.5em .5em 1em;
+    border: 1px solid #84c639;
+    margin: .35em 0 0;
+    background: url(../img/cart.png) no-repeat 116px 9px;
+}
+
+
+/* *********************************** Top-BRANDS **************************************** */
+.top-brands .container{
+	margin-left: 70px;
+	text-align: center;
+}
+
+.tag {
+    position: absolute;
+    top: -1%;
+    right: 10%;
+}
+.top-brands h3,.fresh-vegetables h3,.mail h3,.testimonials h3,.w3_login h3,.w3ls_w3l_banner_nav_right_grid h3,h3.title,.faq h3,.services h3,.about h3,.team h3,.events h3{
+	text-align:center;
+	color:#212121;
+	padding-bottom:.5em;
+	position:relative;
+	font-size: 2.5em;
+}
+.top-brands h3:after,.fresh-vegetables h3:after,.mail h3:after,.w3_login h3:after,.testimonials h3:after,.w3ls_w3l_banner_nav_right_grid h3:after,h3.title:after,.faq h3:after,.services h3:after,.about h3:after,.team h3:after,.events h3:after{
+	content: '';
+    background: #FA1818;
+    height: 2px;
+    width: 8%;
+    position: absolute;
+    bottom: 0%;
+    left: 46%;
+}
+.agile_top_brand_left_grid{
+	background: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	position:relative;
+}
+.agile_top_brand_left_grid1{
+	padding:1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.agile_top_brand_left_grid1 img{
+	margin:0 auto;
+}
+.agile_top_brands_grids{
+	margin:3em 0 0;
+}
+.top-brands{
+    background: #f5f5f5;
+}
+.agile_top_brand_left_grid1 p{
+	color:#212121;
+	margin:1.5em 0 1em;
+	line-height:1.5em;
+	text-transform:capitalize;
+	font-size:14px;
+}
+.agile_top_brand_left_grid1 h4,.agileinfo_single_right_snipcart h4{
+	font-weight:600;
+	font-size:1em;
+	color:#212121;
+}
+.agile_top_brand_left_grid1 h4 span,.agileinfo_single_right_snipcart h4 span{
+	font-weight:300;
+	text-decoration:line-through;
+	padding-left:1em;
+}
+ /*Flip Cover Hover Effect*/
+.inside{
+            width: 250px;
+            height: 310px;
+            background-size: cover;
+            position: relative;
+            perspective: 1000px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+.price{
+    padding-top: 25%;
+}
+.cover{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background:#fff;
+            transform-style: preserve-3d;
+            transform-origin: left;
+            transition: all .5s ease-in;
+            text-align: center;
+            padding-top: 20%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+.inside:hover .cover{
+            transform: rotateY(-100deg);
+
+        }
+.figure{
+            margin: 0;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+.page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+}
+@media (min-width: 200px) AND (max-width: 600px){
+    #all_products{
+        padding-top: 50px;
+        padding-left: 50px; 
+        }
+    .inside{
+            width: 180px;
+            height: 240px;
+            background-size: cover;
+        }
+    .cover img{
+        width: 100px;
+        height: 110px;
+    }
+}
+/*-- cart --*/
+.product_list_header {
+    float: left;
+    margin-left: 7em;
+}
+.snipcart-details {
+    text-align: center;
+	margin: 1.5em auto 1em;
+    width:77%;
+}
+.btn-danger.my-cart-btn:focus {
+    outline: none;
+}
+.snipcart-details input.button {
+    font-size: 14px;
+    color: #fff;
+    background: #FA1818;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    text-transform: uppercase;
+    padding: .5em 0;
+    outline: none;
+}
+.agile_top_brand_left_grid:hover .snipcart-details input.button,.snipcart-details input.button:hover{
+    background: #84C639;
+}
+.product_list_header input.button {
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    text-transform: capitalize;
+    padding: .5em 2.5em .5em 1em;
+    border: 1px solid #84c639;
+    margin: .35em 0 0;
+    background: url(../img/cart.png) no-repeat 116px 9px;
+}
+#PPMiniCart form {
+    width: 590px !important;
+	padding: 10px 20px 40px !important;
+	max-height:450px !important;
+}
+#PPMiniCart ul {
+    width: 548px !important;
+}
+#PPMiniCart .minicart-item a {
+    color: #212121 !important;
+    font-size: 1em;
+    display: block;
+    margin-bottom: .5em;
+    text-transform: capitalize;
+}
+#PPMiniCart .minicart-item {
+    min-height:60px !important;
+}
+#PPMiniCart .minicart-attributes li {
+    color: #999;
+}
+#PPMiniCart .minicart-remove {
+    background: #fa1818 !important;
+    border: 1px solid #fa1818 !important;
+	opacity: 1 !important;
+	outline:none;
+}
+#PPMiniCart .minicart-submit:hover{
+	background:#84C639 !important;
+	border-color: #5b951a !important;
+}
+#PPMiniCart .minicart-subtotal {
+    padding-left: 25px !important;
+	bottom: -17px !important;
+}
+#PPMiniCart {
+    left: 44% !important;
+}
+.minicart-showing #PPMiniCart form{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#PPMiniCart .minicart-footer {
+    position: relative;
+	width: 80%;
+}
+#PPMiniCart .minicart-submit {
+    position: absolute;
+    bottom: -28px!important;
+    right: 0px!important;
+    min-width: 153px;
+    height: 33px;
+    margin-right:6px;
+    padding: 0 9px;
+    border: 1px solid #84c639!important;
+	background:#84c639!important;
+	position: absolute;
+    border-radius: 0px!important;
+    color: #000;
+    text-shadow:none!important;
+    cursor: pointer;
+}
+#PPMiniCart .minicart-submit img {
+    vertical-align: middle;
+    padding: 4px 0 0 2px;
+    display: none;
+}
+/*--/payment--*/
+
+/*-- Pay-page --*/
+.agileits_w3layouts_tab2 input[type="email"],.agileits_w3layouts_tab2 input[type="password"],.creditly-wrapper .form-control{
+	display: block;
+    width: 95.5%;
+    padding: 15px 10px;
+    font-size: 14px;
+    color: #212121;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 25px;
+	outline:none;
+}
+.agileits_w3layouts_tab2 input[type="email"]:focus,.agileits_w3layouts_tab2 input[type="password"]:focus,.creditly-wrapper .form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+}
+.agileits_w3layouts_tab2 input[type="submit"] {
+    display: block;
+    position: relative;
+    padding: 6px 50px 11px;
+    letter-spacing: 3px;
+    background: #1adeed;
+    font-size: 1.5em;
+    color: #fff;
+    border: 1px solid #1adeed;
+    outline: none;
+    text-transform: uppercase;
+	cursor:pointer;
+}
+.agileits_w3layouts_tab2 input[type="submit"]:hover{
+	background: #fff;
+    color: #212121;
+	border: 1px solid #e7e7e7;
+}
+.agileinfo_main_grid_left_grid h3{
+	font-size:1.3em;
+	color:#fff;
+}
+.agileinfo_main_grid_left_grid ul{
+	margin-top:1.5em;
+}
+.agileinfo_main_grid_left_grid ul li{
+	display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    vertical-align: top;
+}
+.agileinfo_main_grid_left_grid ul li span{
+	display:block;
+	font-size:.5em;
+	color:#999;
+}
+.agileinfo_main_grid_left_grid ul li:first-child{
+	width: 70%;
+	border-right:1px solid #999;
+}
+.agileinfo_main_grid_left_grid ul li:last-child{
+	padding-left:1em;
+	text-align:right;
+}
+.agile_amount{
+	padding:1em 2em;
+	background:#f71926;
+}
+.agile_amount h3{
+	font-size:1.3em;
+	color:#fff;
+}
+.agile_amount h4{
+	font-size:2em;
+	color:#fff;
+	font-weight:bold;
+}
+.agile_amount p{
+	font-size:1em;
+	color:#1adeed;
+	line-height:1.8em;
+}
+
+
+img.pp-img {
+    width: 65%;
+}
+.tab-grid p {
+    color: #8B8B8B;
+    font-size: 0.95em;
+    line-height: 1.8em;
+    font-weight: 400;
+    margin: 10px 0;
+}
+a.btn.btn-primary {
+    background-color: #3a5795;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    border: none;
+}
+
+
+
+.vertical_post h5 {
+    color: #212121;
+    font-size: 18px;
+    margin: 0 0 18px 0;
+    letter-spacing: 1px;
+}
+
+.swit-radio label {
+    font-size: 16px;
+    color: #696969;
+    padding: 0px 0 0 10px;
+    font-weight: 100;
+}
+.radio_one:first-child {
+    margin-left: 0;
+    margin: 0;
+}
+.radio_one {
+    padding-left: 22px;
+    line-height: 28px;
+    color: #404040;
+    cursor: pointer;
+}
+.radio_one {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+}
+.section_room_pay select {
+    padding: 6px 10px;
+    width: 33%;
+    border: none;
+    background: none;
+    border: 1px solid #E6E4E4;
+    color: #D2D1D1;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 0;
+    background: url(../img/arrow.png) no-repeat 96% center #ffffff;
+    background-size: 4% !important;
+    -webkit-appearance: none;
+}
+ select.form-control.option-w3ls {
+    width: 100%;
+    padding: 1em 1em 1em 1em;
+    font-size: 0.8em;
+    margin: 0.5em 0;
+    outline: none;
+    color: #212121;
+    border: none;
+    border: 1px solid #ccc;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.checkout-right-basket span {
+    margin-left: 1em;
+}
+.check_box_one {
+    float: left;
+    width: 22%;
+    margin-bottom: 10px;
+}
+.vertical_post form input[type="submit"]:hover {
+      background: #fa1818;
+}
+.vertical_post form input[type="submit"] {
+     background: #84c639;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 22%;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.form-control {
+    border-radius: 0;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #84c639;
+    border-color: #84c639;
+    border-radius: 0;
+}
+button.submit.check_out{
+    display: block;
+    position: relative;
+    padding: 11px 30px;
+    letter-spacing: 1px;
+    background: #84c639;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-transform: uppercase;
+}
+/*-- //Pay-page --*/
+/*-- //cart --*/
+.column div.agile_top_brand_left_grid {
+	position: relative;
+	margin:0;
+}
+.agile_top_brand_left_grid figure {
+	margin: 0;
+	padding: 0;
+	background:transparent;
+	overflow: hidden;
+	z-index: 0;
+}
+/* Shine */
+.hover14 figure {
+	position: relative;
+}
+.hover14 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.top_brand_left{
+	margin-bottom: 20px;
+}
+.hover14 figure:hover::before,.top_brand_left:hover .hover14 figure::before{
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+/* ******************************* //TOP-BRANDS ****************************** */
+
+/* ******************************* OTHER LINKS ******************************* */
+.col-md-12{
+	margin-top: 20px;
+}
+/* ****************************** //OTHER LINKS ***************************** */
+
+
+/* ******************************* FOOTER ************************************ */
+.footer{
+	padding:2em 0;
+	background:#212121;
+}
+
+.footer_grid_bottom h4{
+	color: red;
+	text-align: center;
+	font-size:20px;
+	margin-bottom:1em;
+}
+
+.agileits_social_icons{
+	text-align: center;
+}
+.agileits_social_icons li{
+	display:inline-block;
+}
+.agileits_social_icons li a{
+	border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+}
+.agileits_social_icons li a i {
+    padding: 0.8em 0 0;
+}
+.agileits_social_icons li a.facebook:hover{
+	background:#3b5998;
+	border-color:#3b5998;
+}
+.agileits_social_icons li a.twitter:hover{
+	background:#55acee;
+	border-color:#55acee;
+}
+.agileits_social_icons li a.google:hover{
+	background:#dd4b39;
+	border-color:#dd4b39;
+}
+.agileits_social_icons li a.instagram:hover{
+	background:#cc00ff;
+	background: linear-gradient(to bottom right, rgba(0,0,255,1), rgba(255,255,0,0.5), red);
+	border-color:#cc00ff;
+}
+.agileits_social_icons li a.quora:hover{
+	background: #960a0a;
+	border-color: #960a0a;
+}
+
+.footer_copy{
+	margin: 4em 0 0;
+    padding: 3em 0 0;
+    text-align: center;
+    border-top: 1px solid #3A3A3A;
+}
+.footer_copy p{
+	font-size:14px;
+	color:#999;
+	line-height:1.8em;
+}
+.footer_copy p a{
+	color:#fff;
+	text-decoration:none;
+}
+.footer_copy p a:hover{
+	color:#FA1818;
+}
+/* ******************************** //FOOTER ***************************************** */
+
+/* ******************************** TO-TOP ********************************* */
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 2%;
+	overflow: hidden;
+	z-index: 999; 
+	width: 32px;
+	height: 32px;
+	border: none;
+	text-indent: 100%;
+	background: url(../img/arrow.png) no-repeat 0px 0px;
+}
+#toTopHover {
+	width: 32px;
+	height: 32px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+/*-- //to-top --*/
+/* ************************************** //INDEX HTML ****************************************** */
+/* ************************************* PRODUCTS HTML ****************************************** */
+.sub-head{
+	text-align: left;
+}
+
+.sub-head h6{
+	text-transform: uppercase;
+    color: #212121;
+    font-size: 1.7em;
+    margin-bottom: 1.5em;
+}
+
